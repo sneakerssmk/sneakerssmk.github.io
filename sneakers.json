@@ -34,7 +34,7 @@
     },
     {
       "id": "5",
-      "image": " \"images/sneakers/082.png\"",
+      "image": " \"images/sneakers/082.jpeg\"",
       "name": "Nike Dunk Low Retro \"University Blue\"",
       "size": "39-45",
       "oldPrice": "€130.00",
@@ -42,7 +42,7 @@
     },
     {
       "id": "6",
-      "image": " \"images/sneakers/083.png\"",
+      "image": " \"images/sneakers/083.jpeg\"",
       "name": "Nike Air Max Plus \"Throwback Future\"",
       "size": "39-45",
       "oldPrice": "€130.00",
@@ -50,7 +50,7 @@
     },
     {
       "id": "7",
-      "image": " \"images/sneakers/084.png\"",
+      "image": " \"images/sneakers/084.jpeg\"",
       "name": "Nike Air Max Plus \"Particle Grey Vapour Green\"",
       "size": "39-45",
       "oldPrice": "€130.00",
@@ -58,7 +58,7 @@
     },
     {
       "id": "8",
-      "image": " \"images/sneakers/085.png\"",
+      "image": " \"images/sneakers/085.jpeg\"",
       "name": "Nike Dunk Low Retro \"Gray Fog\"",
       "size": "39-45",
       "oldPrice": "€130.00",
@@ -66,7 +66,7 @@
     },
     {
       "id": "9",
-      "image": " \"images/sneakers/086.png\"",
+      "image": " \"images/sneakers/086.jpeg\"",
       "name": "Nike Air Max Plus \"Toggle Black Reflective\"",
       "size": "39-45",
       "oldPrice": "€130.00",
@@ -74,7 +74,7 @@
     },
     {
       "id": "10",
-      "image": " \"images/sneakers/087.png\"",
+      "image": " \"images/sneakers/087.jpeg\"",
       "name": "Nike Dunk Low Retro \"Orange Blaze\"",
       "size": "39-45",
       "oldPrice": "€130.00",
@@ -82,7 +82,7 @@
     },
     {
       "id": "11",
-      "image": " \"images/sneakers/088.png\"",
+      "image": " \"images/sneakers/088.jpeg\"",
       "name": "Nike Air Max Plus 3 \"Obsidian\"",
       "size": "39-45",
       "oldPrice": "€130.00",
