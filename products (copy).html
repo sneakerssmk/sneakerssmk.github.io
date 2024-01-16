@@ -27,6 +27,69 @@
     <script src="jquery/jquery.js"></script>
     <script src="jquery/jquery-ui.js"></script>
 
+    
+<script src="js/jquery-2.1.0.min.js"></script>
+
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/owl-carousel.js"></script>
+<script src="js/accordions.js"></script>
+<script src="js/datepicker.js"></script>
+<script src="js/scrollreveal.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/imgfix.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/isotope.js"></script>
+
+<script src="js/custom.js"></script>
+
+<script>
+
+    $(function () {
+        var selectedClass = "";
+        $("p").click(function () {
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+            $("#portfolio div").not("." + selectedClass).fadeOut();
+            setTimeout(function () {
+                $("." + selectedClass).fadeIn();
+                $("#portfolio").fadeTo(50, 1);
+            }, 500);
+
+        });
+    });
+
+    $(document).ready(function () {
+        function getData(code) {
+            $.ajax({
+                url: "https://github.com/sneakerssmk/sneakerssmk.github.io/blob/main/sneakers.json",
+                dataType: "json",
+                success: function (data) {
+                    $.each(data.Sneakers, function (i, item) {
+                        var name = $("<h4>").append(item.name);
+                        var size = $("<span>").append(item.size);
+                        var oldPrice = $("<span class=\"crossed\">").append(item.oldPrice);
+                        var price = $("<span>").append(item.price);
+                        
+                        $("<div class=\"col-lg-4\">")
+                            .append("<div class=\"item\"> <div class=\"thumb\"> <img src= "+ item.image +"/> <div class=\"down-content\">"
+                                + "<h4>"+ item.name + "</h4>"
+                                +"<span>"+ item.size + "</span>"
+                                +"<span class=\"crossed\">"+ item.oldPrice + "</span>"
+                                +"<span>"+ item.price + "</span>")
+                            .appendTo("#" + code)
+
+                    })
+                }
+            })
+        }
+        getData(1)
+    })
+</script>
+
 </head>
 
 <body>
@@ -147,66 +210,5 @@
 </footer>
 
 
-<script src="js/jquery-2.1.0.min.js"></script>
-
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-<script src="js/owl-carousel.js"></script>
-<script src="js/accordions.js"></script>
-<script src="js/datepicker.js"></script>
-<script src="js/scrollreveal.min.js"></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/jquery.counterup.min.js"></script>
-<script src="js/imgfix.min.js"></script>
-<script src="js/slick.js"></script>
-<script src="js/lightbox.js"></script>
-<script src="js/isotope.js"></script>
-
-<script src="js/custom.js"></script>
-
-<script>
-
-    $(function () {
-        var selectedClass = "";
-        $("p").click(function () {
-            selectedClass = $(this).attr("data-rel");
-            $("#portfolio").fadeTo(50, 0.1);
-            $("#portfolio div").not("." + selectedClass).fadeOut();
-            setTimeout(function () {
-                $("." + selectedClass).fadeIn();
-                $("#portfolio").fadeTo(50, 1);
-            }, 500);
-
-        });
-    });
-
-    $(document).ready(function () {
-        function getData(code) {
-            $.ajax({
-                url: "sneakers.json",
-                dataType: "json",
-                success: function (data) {
-                    $.each(data.Sneakers, function (i, item) {
-                        var name = $("<h4>").append(item.name);
-                        var size = $("<span>").append(item.size);
-                        var oldPrice = $("<span class=\"crossed\">").append(item.oldPrice);
-                        var price = $("<span>").append(item.price);
-                        
-                        $("<div class=\"col-lg-4\">")
-                            .append("<div class=\"item\"> <div class=\"thumb\"> <img src= "+ item.image +"/> <div class=\"down-content\">"
-                                + "<h4>"+ item.name + "</h4>"
-                                +"<span>"+ item.size + "</span>"
-                                +"<span class=\"crossed\">"+ item.oldPrice + "</span>"
-                                +"<span>"+ item.price + "</span>")
-                            .appendTo("#" + code)
-
-                    })
-                }
-            })
-        }
-        getData(1)
-    })
-</script>
 </body>
 </html>
