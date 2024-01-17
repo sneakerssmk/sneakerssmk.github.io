@@ -287,6 +287,30 @@
       "size": "39-45",
       "oldPrice": "€130.00",
       "price": "€75.00 (4599 den.)"
+    },
+    {
+      "id": "37",
+      "image": " \"images/sneakers/089.jpeg\"",
+      "name": "KARL LAGERFELD \"CLASSIC WHITE\"",
+      "size": "36-45",
+      "oldPrice": "€90.00",
+      "price": "€45.00 (2700 den.)"
+    },
+    {
+      "id": "38",
+      "image": " \"images/sneakers/090.jpeg\"",
+      "name": "KARL LAGERFELD \"CLASSIC BLACK\"",
+      "size": "36-45",
+      "oldPrice": "€90.00",
+      "price": "€45.00 (2700 den.)"
+    },
+    {
+      "id": "39",
+      "image": " \"images/sneakers/091.jpeg\"",
+      "name": "New Balance \"327\"",
+      "size": "36-45",
+      "oldPrice": "€70.00",
+      "price": "€35.00 (2100 den.)"
     }
   ]
 }
