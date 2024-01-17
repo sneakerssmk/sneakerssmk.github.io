@@ -913,6 +913,7 @@ Men
     background-color: transparent;
     line-height: 48px;
     border: 1px solid #2a2a2a;
+    border-radius: 50%;
 }
 
 #men .owl-nav .owl-prev {
@@ -951,6 +952,7 @@ Men
     background-color: transparent;
     line-height: 48px;
     border: 1px solid #2a2a2a;
+    border-radius: 50%;
 }
 
 
@@ -1081,6 +1083,7 @@ Women
     background-color: transparent;
     line-height: 48px;
     border: 1px solid #2a2a2a;
+    border-radius: 50%;
 }
 
 #women .owl-nav .owl-prev {
@@ -1119,6 +1122,7 @@ Women
     background-color: transparent;
     line-height: 48px;
     border: 1px solid #2a2a2a;
+    border-radius: 50%;
 }
 
 /*
@@ -1248,6 +1252,7 @@ tracksuits
     background-color: transparent;
     line-height: 48px;
     border: 1px solid #2a2a2a;
+    border-radius: 50%;
 }
 
 #tracksuits .owl-nav .owl-prev {
@@ -1286,6 +1291,7 @@ tracksuits
     background-color: transparent;
     line-height: 48px;
     border: 1px solid #2a2a2a;
+    border-radius: 50%;
 }
 
 
