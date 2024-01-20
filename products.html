@@ -2,33 +2,136 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
           rel="stylesheet">
 
     <title>Sneakerss.mk</title>
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" href="css/sneakerss.css">
+    <link href="css/sneakerss.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/owl-carousel.css">
+    <link href="css/owl-carousel.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/lightbox.css">
+    <link href="css/lightbox.css" rel="stylesheet">
+
+    <link href="jquery/jquery-ui.css" rel="stylesheet">
+    <script src="jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+
+    
+<script src="js/jquery-2.1.0.min.js"></script>
+
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/owl-carousel.js"></script>
+<script src="js/accordions.js"></script>
+<script src="js/datepicker.js"></script>
+<script src="js/scrollreveal.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/imgfix.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/isotope.js"></script>
+
+<script src="js/custom.js"></script>
+
+<script>
+
+    $(function () {
+        var selectedClass = "";
+        $("p").click(function () {
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+            $("#portfolio div").not("." + selectedClass).fadeOut();
+            setTimeout(function () {
+                $("." + selectedClass).fadeIn();
+                $("#portfolio").fadeTo(50, 1);
+            }, 500);
+
+        });
+    });
+
+    $(document).ready(function () {
+        function getData(code) {
+            $.ajax({
+                url: "./sneakers.json",
+                dataType: "json",
+                success: function (data) {
+                    $.each(data.Sneakers, function (i, item) {
+                        var name = $("<h4>").append(item.name);
+                        var size = $("<span>").append(item.size);
+                        var oldPrice = $("<span class=\"crossed\">").append(item.oldPrice);
+                        var price = $("<span>").append(item.price);
+                        
+                        $("<div class=\"col-lg-4\">")
+                            .append("<div class=\"item\"> <div class=\"thumb\"> <img src= "+ item.image +"/> <div class=\"down-content\">"
+                                + "<h4>"+ item.name + "</h4>"
+                                +"<span>"+ item.size + "</span>"
+                                +"<span class=\"crossed\">"+ item.oldPrice + "</span>"
+                                +"<span>"+ item.price + "</span>")
+                            .appendTo("#" + code)
+
+                    })
+                }
+            })
+        }
+        getData(1)
+    })
+
+
+    // let http=new XMLHttpRequest();
+
+    // http.open('get', './products.json', true);
+
+    // http.send();
+
+    // http.onload = function(){
+    //     if(this.readyState == 4 && this.status ==200){
+    //         let products = JSON.parse(this.responseText);
+
+    //         let output = "";
+
+
+    //         for(let item of products){
+    //             output+=`
+                
+    //             <div class="col-lg-4">
+    //             <div class="item">
+    //                 <div class="thumb">
+                       
+    //                     <img src="${item.image}" alt="">
+    //                 </div>
+    //                 <div class="down-content">
+    //                     <h4>${item.name}</h4>
+    //                     <span>${item.size}</span>
+    //                     <span class="crossed">${item.oldPrice}</span>
+    //                     <span>${item.price}</span>
+    //                 </div>
+    //             </div>
+    //         </div>
+
+    //             `;
+    //         }
+    //         document.querySelector(".products").innerHTML = output;
+    //     }
+    // }
+</script>
 
 </head>
 
 <body>
 
-<!-- ***** Preloader Start ***** -->
 <div id="preloader">
     <div class="jumper">
         <div></div>
@@ -36,23 +139,19 @@
         <div></div>
     </div>
 </div>
-<!-- ***** Preloader End ***** -->
 
-
-<!-- ***** Header Area Start ***** -->
 <header class="header-area header-sticky">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <img src="images/logoGIMP.png" style="border-radius: 5px;" width="150%" height="150%">
+                    
+                    <a class="logo" href="index.html">
+                        <img height="150%" src="images/logoGIMP.png" style="border-radius: 5px;" width="150%">
                     </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
+                    
                     <ul class="nav">
-                        <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+                        <li class="scroll-to-section"><a class="active" href="index.html">Home</a></li>
                         <li class="scroll-to-section"><a href="index.html">Men's</a></li>
                         <li class="scroll-to-section"><a href="index.html">Women's</a></li>
                         <li class="scroll-to-section"><a href="index.html">Tracksuits</a></li>
@@ -62,15 +161,13 @@
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
-                    <!-- ***** Menu End ***** -->
+                    
                 </nav>
             </div>
         </div>
     </div>
 </header>
-<!-- ***** Header Area End ***** -->
 
-<!-- ***** Main Banner Area Start ***** -->
 <div class="page-heading" id="top">
     <div class="container">
         <div class="row">
@@ -82,9 +179,7 @@
         </div>
     </div>
 </div>
-<!-- ***** Main Banner Area End ***** -->
 
-<!-- ***** Products Area Starts ***** -->
 <section class="section" id="products">
     <div class="container">
         <div class="row">
@@ -97,615 +192,20 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <!--            <div class="col-lg-4">-->
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        <!-- <div class="hover-content">
-                            <ul>
-                                <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
-                                <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
-                                <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
-                            </ul>
-                        </div> -->
-                        <img src="images/sneakers/4.heic" alt=" ">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Max Plus 3 "Sub-Zero"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€75.00 (4599 den.)</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                    
-                        <img src="images/sneakers/2.heic" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Max Plus "Triple-Black"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€130.00</span>
-                        <span>€65.00 (3999 den.)</span>
+        <div class="row" code="1" id="1">
 
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/3.heic" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Max Plus "Spray Paint Swoosh"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€130.00</span>
-                        <span>€69.00 (4299 den.)</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                       
-                        <img src="images/sneakers/1.png">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Max Plus "Time-Capsule"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€130.00</span>
-                        <span>€69.00 (4299 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                      
-                        <img src="images/sneakers/082.jpeg">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Dunk Low Retro "University Blue"</h4>
-                        <span>Size: 36-45</span>
-                        <span class="crossed">€130.00</span>
-                        <span>€49.00 (2999 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/083.jpeg">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Max Plus "Throwback Future"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€130.00</span>
-                        <span>€69.00 (4299 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/084.jpeg">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Max Plus "Particle Grey Vapour Green"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€130.00</span>
-                        <span>€69.00 (4299 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                      
-                        <img src="images/sneakers/085.jpeg">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Dunk Low Retro "Gray Fog"</h4>
-                        <span>Size: 36-45</span>
-                        <span class="crossed">€130.00</span>
-                        <span>€49.00 (2999 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/086.jpeg">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Max Plus "Toggle Black Reflective"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€130.00</span>
-                        <span>€69.00 (4299 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/087.jpeg">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Dunk Low Retro "Orange Blaze"</h4>
-                        <span>Size: 36-45</span>
-                        <span class="crossed">€130.00</span>
-                        <span>€49.00 (2999 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/089.jpeg">
-                    </div>
-                    <div class="down-content">
-                        <h4>KARL LAGERFELD "CLASSIC WHITE"</h4>
-                        <span>Size: 36-45</span>
-                        <span class="crossed">€90.00</span>
-                        <span>€45.00 (2700 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/090.jpeg">
-                    </div>
-                    <div class="down-content">
-                        <h4>KARL LAGERFELD "CLASSIC BLACK"</h4>
-                        <span>Size: 36-45</span>
-                        <span class="crossed">€90.00</span>
-                        <span>€45.00 (2700 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/091.jpeg" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>New Balance "327"</h4>
-                        <span>Size: 36-45</span>
-                        <span class="crossed">€70.00</span>
-                        <span>€35.00 (2100 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                       
-                        <img src="images/sneakers/5.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Force 1 Low'07 "Valentine's Day" </h4>
-                        <span>Size: 36-45</span>
-                        <span class="crossed">€130.00</span>
-                        <span>€75.00 (4599 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                      
-                        <img src="images/sneakers/088.jpeg">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Max Plus 3 "Obsidian"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€130.00</span>
-                        <span>€75.00 (4599 den.)</span>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                       
-                        <img src="images/sneakers/01.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Force 1 Low "Under Construction"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€75.00 (4599 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/03.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Force 1 Low "Triple Black"</h4>
-                        <span>Size: 36-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€65.00 (3999 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/06.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Force 1 Low "Carabiner Swoosh Red"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€75.00 (4599 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                       
-                        <img src="images/sneakers/07.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air VaporMax Plus "Triple Black"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€65.00 (3999 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/011.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Force 1 Low "Triple White"</h4>
-                        <span>Size: 36-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€65.00 (3999 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                       
-                        <img src="images/sneakers/015.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Force 1 Low "React Mint Foam"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€75.00 (4599 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/016.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Max Plus 3 "Revolve"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€75.00 (4599 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/017.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air More Uptempo "Peace, Love, Basketball"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€69.00 (4299 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/018.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Max Plus 3 "White Multi-Swoosh"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€75.00 (4599 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/025.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Force 1 Low "React Black Neon"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€75.00 (4599 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/033.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Duck Low "Varsity Green"</h4>
-                        <span>Size: 36-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€49.00 (2999 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                       
-                        <img src="images/sneakers/035.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Max Plus TN "Triple White"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€65.00 (3999 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/038.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Max Plus TN "Berlin"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€75.00 (4599 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                       
-                        <img src="images/sneakers/039.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Max Plus 3 "Black Spray Paint Swoosh"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€75.00 (4599 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                       
-                        <img src="images/sneakers/046.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Force 1 Low "Double Swoosh White Picante"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€75.00 (4599 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/059.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air More Uptempo "Triple Black"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€69.00 (4299 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/063.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Max Plus TN "Multi Swoosh"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€69.00 (4299 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/064.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Max Plus 3 "Iridescent"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€75.00 (4599 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                       
-                        <img src="images/sneakers/068.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Force 1 Low "Peaceminusone"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€75.00 (4599 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                       
-                        <img src="images/sneakers/069.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Max Plus 3 "Noir-Chaussures"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€75.00 (4599 den.)</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                       
-                        <img src="images/sneakers/074.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Max Plus TN "Hyper Blue"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€69 .00 (4299 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/080.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Force 1 Low "NAI-KE Basket Weave"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€75.00 (4599 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                      
-                        <img src="images/sneakers/020.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Jordan 4 "Black Cat"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€75.00 (4599 den.)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="item">
-                    <div class="thumb">
-                        
-                        <img src="images/sneakers/081.png" alt="">
-                    </div>
-                    <div class="down-content">
-                        <h4>Nike Air Force 1 Low "NAI-KE Forest Weave"</h4>
-                        <span>Size: 39-45</span>
-                        <span class="crossed">€160.00</span>
-                        <span>€75.00 (4599 den.)</span>
-                    </div>
-                </div>
-            </div>
 
         </div>
     </div>
 </section>
-<!-- ***** Products Area Ends ***** -->
 
-<!-- ***** Footer Start ***** -->
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
                 <div class="first-item">
                     <div class="logo">
-                        <img src="images/transparent_bg.png" alt="">
+                        <img alt="" src="images/transparent_bg.png">
                     </div>
                     <ul>
                         <li><a href="#">Skopje, Macedonia</a></li>
@@ -750,46 +250,5 @@
 </footer>
 
 
-<!-- jQuery -->
-<script src="js/jquery-2.1.0.min.js"></script>
-
-<!-- Bootstrap -->
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-<!-- Plugins -->
-<script src="js/owl-carousel.js"></script>
-<script src="js/accordions.js"></script>
-<script src="js/datepicker.js"></script>
-<script src="js/scrollreveal.min.js"></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/jquery.counterup.min.js"></script>
-<script src="js/imgfix.min.js"></script>
-<script src="js/slick.js"></script>
-<script src="js/lightbox.js"></script>
-<script src="js/isotope.js"></script>
-
-<!-- Global Init -->
-<script src="js/custom.js"></script>
-
-<script>
-
-    $(function () {
-        var selectedClass = "";
-        $("p").click(function () {
-            selectedClass = $(this).attr("data-rel");
-            $("#portfolio").fadeTo(50, 0.1);
-            $("#portfolio div").not("." + selectedClass).fadeOut();
-            setTimeout(function () {
-                $("." + selectedClass).fadeIn();
-                $("#portfolio").fadeTo(50, 1);
-            }, 500);
-
-        });
-    });
-
-</script>
-
 </body>
-
 </html>
