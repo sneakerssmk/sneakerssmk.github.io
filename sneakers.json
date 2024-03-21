@@ -2,14 +2,6 @@
   "Sneakers": [
     {
       "id": "1",
-      "image": " \"images/sneakers/4.heic\"",
-      "name": "Nike Air Max Plus 3 \"Sub-Zero\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "2",
       "image": " \"images/sneakers/2.heic\"",
       "name": "Nike Air Max Plus \"Triple-Black\"",
       "size": "39-45",
@@ -17,183 +9,39 @@
       "price": "€65.00 (3999 den.)"
     },
     {
-      "id": "3",
-      "image": " \"images/sneakers/3.heic\"",
-      "name": "Nike Air Max Plus \"Spray Paint Swoosh\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "4",
-      "image": " \"images/sneakers/1.png\"",
-      "name": "Nike Air Max Plus \"Time-Capsule\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "5",
-      "image": " \"images/sneakers/082.jpeg\"",
-      "name": "Nike Dunk Low Retro \"University Blue\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "6",
-      "image": " \"images/sneakers/083.jpeg\"",
-      "name": "Nike Air Max Plus \"Throwback Future\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "7",
-      "image": " \"images/sneakers/084.jpeg\"",
-      "name": "Nike Air Max Plus \"Particle Grey Vapour Green\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "8",
-      "image": " \"images/sneakers/085.jpeg\"",
-      "name": "Nike Dunk Low Retro \"Gray Fog\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "9",
+      "id": "2",
       "image": " \"images/sneakers/086.jpeg\"",
-      "name": "Nike Air Max Plus \"Toggle Black Reflective\"",
+      "name": "Nike Air Max Plus \"Utility\"",
       "size": "39-45",
       "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
+      "price": "€70.00 (4300 den.)"
     },
     {
-      "id": "10",
-      "image": " \"images/sneakers/087.jpeg\"",
-      "name": "Nike Dunk Low Retro \"Orange Blaze\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "11",
-      "image": " \"images/sneakers/088.jpeg\"",
-      "name": "Nike Air Max Plus 3 \"Obsidian\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "12",
-      "image": " \"images/sneakers/5.png\"",
-      "name": "Nike Air Force 1 Low'07 \"Valentine's Day\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "13",
-      "image": " \"images/sneakers/01.png\"",
-      "name": "Nike Air Force 1 Low \"Under Construction\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "14",
-      "image": " \"images/sneakers/03.png\"",
-      "name": "Nike Air Force 1 Low \"Triple Black\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "15",
-      "image": " \"images/sneakers/06.png\"",
-      "name": "Nike Air Force 1 Low \"Carabiner Swoosh Red\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "16",
+      "id": "3",
       "image": " \"images/sneakers/07.png\"",
       "name": "Nike Air VaporMax Plus \"Triple Black\"",
       "size": "39-45",
       "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
+      "price": "€60.00 (3600 den.)"
     },
     {
-      "id": "17",
+      "id": "4",
       "image": " \"images/sneakers/011.png\"",
       "name": "Nike Air Force 1 Low \"Triple White\"",
       "size": "39-45",
       "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
+      "price": "€60.00 (3600 den.)"
     },
     {
-      "id": "18",
-      "image": " \"images/sneakers/015.png\"",
-      "name": "Nike Air Force 1 Low \"React Mint Foam\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "19",
-      "image": " \"images/sneakers/016.png\"",
-      "name": "Nike Air Max Plus 3 \"Revolve\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "20",
-      "image": " \"images/sneakers/017.png\"",
-      "name": "Nike Air More Uptempo \"Peace, Love, Basketball\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "21",
-      "image": " \"images/sneakers/018.png\"",
-      "name": "Nike Air Max Plus 3 \"White Multi-Swoosh\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "22",
-      "image": " \"images/sneakers/025.png\"",
-      "name": "Nike Air Force 1 Low \"React Black Neon\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "23",
-      "image": " \"images/sneakers/033.png\"",
-      "name": "Nike Duck Low \"Varsity Green\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "24",
+      "id": "5",
       "image": " \"images/sneakers/035.png\"",
       "name": "Nike Air Max Plus TN \"Triple White\"",
       "size": "39-45",
       "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
+      "price": "€65.00 (4000 den.)"
     },
     {
-      "id": "25",
+      "id": "6",
       "image": " \"images/sneakers/038.png\"",
       "name": "Nike Air Max Plus TN \"Berlin\"",
       "size": "39-45",
@@ -201,7 +49,7 @@
       "price": "€75.00 (4599 den.)"
     },
     {
-      "id": "26",
+      "id": "7",
       "image": " \"images/sneakers/039.png\"",
       "name": "Nike Air Max Plus 3 \"Black Spray Paint Swoosh\"",
       "size": "39-45",
@@ -209,108 +57,173 @@
       "price": "€75.00 (4599 den.)"
     },
     {
-      "id": "27",
-      "image": " \"images/sneakers/046.png\"",
-      "name": "Nike Air Force 1 Low \"Double Swoosh White Picante\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "28",
-      "image": " \"images/sneakers/059.png\"",
-      "name": "Nike Air More Uptempo \"Triple Black\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "29",
+      "id": "8",
       "image": " \"images/sneakers/063.png\"",
       "name": "Nike Air Max Plus TN \"Multi Swoosh\"",
       "size": "39-45",
       "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
+      "price": "€70.00 (4300 den.)"
     },
     {
-      "id": "30",
-      "image": " \"images/sneakers/064.png\"",
-      "name": "Nike Air Max Plus 3 \"Iridescent\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "31",
-      "image": " \"images/sneakers/068.png\"",
-      "name": "Nike Air Force 1 Low \"Peaceminusone\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "32",
-      "image": " \"images/sneakers/069.png\"",
-      "name": "Nike Air Max Plus 3 \"Noir-Chaussures\"",
-      "size": "39-45",
-      "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
-    },
-    {
-      "id": "33",
+      "id": "9",
       "image": " \"images/sneakers/074.png\"",
       "name": "Nike Air Max Plus TN \"Hyper Blue\"",
       "size": "39-45",
       "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
+      "price": "€70.00 (4300 den.)"
     },
     {
-      "id": "34",
-      "image": " \"images/sneakers/080.png\"",
-      "name": "Nike Air Force 1 Low \"NAI-KE Basket Weave\"",
+      "id": "10",
+      "image": " \"images/sneakers/01.jpeg\"",
+      "name": "Nike Air Max Plus TN \"MARSIELLE\"",
+      "size": "39-45",
+      "oldPrice": "€200.00",
+      "price": "€100.00 (6100 den.)"
+    },
+    {
+      "id": "11",
+      "image": " \"images/sneakers/02.jpeg\"",
+      "name": "Nike Air Max Plus TN \"AQUA BLACK\"",
+      "size": "39-45",
+      "oldPrice": "€130.00",
+      "price": "€70.00 (4300 den.)"
+    },
+    {
+      "id": "12",
+      "image": " \"images/sneakers/03.jpeg\"",
+      "name": "Nike Air Max Plus TN \"SMOKE GREY\"",
+      "size": "39-45",
+      "oldPrice": "€130.00",
+      "price": "€70.00 (4300 den.)"
+    },
+    {
+      "id": "13",
+      "image": " \"images/sneakers/04.jpeg\"",
+      "name": "Nike Air Max Plus TN \"PATTA X FC BARCELONA\"",
       "size": "39-45",
       "oldPrice": "€130.00",
       "price": "€75.00 (4599 den.)"
     },
     {
-      "id": "35",
-      "image": " \"images/sneakers/020.png\"",
-      "name": "Nike Air Jordan 4 \"Black Cat\"",
+      "id": "14",
+      "image": " \"images/sneakers/05.jpeg\"",
+      "name": "Nike Air Max Plus TN \"UTILITY SILVER\"",
+      "size": "39-45",
+      "oldPrice": "€130.00",
+      "price": "€70.00 (4300 den.)"
+    },
+    {
+      "id": "15",
+      "image": " \"images/sneakers/06.jpeg\"",
+      "name": "Nike Air Max Plus TN \"LAYERED SWOOSH\"",
+      "size": "39-45",
+      "oldPrice": "€130.00",
+      "price": "€70.00 (4300 den.)"
+    },
+    {
+      "id": "16",
+      "image": " \"images/sneakers/07.jpeg\"",
+      "name": "Nike Air VaporMax Plus \"TRIPLE WHITE\"",
+      "size": "39-45",
+      "oldPrice": "€130.00",
+      "price": "€60.00 (3600 den.)"
+    },
+    {
+      "id": "17",
+      "image": " \"images/sneakers/08.jpeg\"",
+      "name": "Nike Air Max Plus TN \"UNIVERSITY BLUE\"",
+      "size": "39-45",
+      "oldPrice": "€130.00",
+      "price": "€70.00 (4300 den.)"
+    },
+    {
+      "id": "18",
+      "image": " \"images/sneakers/09.jpeg\"",
+      "name": "Nike Air Max Plus TN \"CAMUFLAGE\"",
+      "size": "39-45",
+      "oldPrice": "€130.00",
+      "price": "€70.00 (4300 den.)"
+    },
+    {
+      "id": "19",
+      "image": " \"images/sneakers/010.jpeg\"",
+      "name": "Nike Air Max Plus TN \"REFLECTIVE VOLT\"",
+      "size": "39-45",
+      "oldPrice": "€130.00",
+      "price": "€70.00 (4300 den.)"
+    },
+    {
+      "id": "20",
+      "image": " \"images/sneakers/011.jpeg\"",
+      "name": "Nike Air Max Plus TN \"GRAPE\"",
+      "size": "39-45",
+      "oldPrice": "€130.00",
+      "price": "€70.00 (4300 den.)"
+    },
+    {
+      "id": "21",
+      "image": " \"images/sneakers/012.jpeg\"",
+      "name": "Nike Air Max Plus TN \"BLACK VOLTAGE\"",
+      "size": "39-45",
+      "oldPrice": "€130.00",
+      "price": "€70.00 (4300 den.)"
+    },
+    {
+      "id": "22",
+      "image": " \"images/sneakers/013.jpeg\"",
+      "name": "Nike Air Max 90 \"TERRASCAPE\"",
+      "size": "39-45",
+      "oldPrice": "€130.00",
+      "price": "€70.00 (4300 den.)"
+    },
+    {
+      "id": "23",
+      "image": " \"images/sneakers/014.jpeg\"",
+      "name": "Nike Air Max Plus 3 \"QUADRUPLE SWOOSH\"",
       "size": "39-45",
       "oldPrice": "€130.00",
       "price": "€75.00 (4599 den.)"
     },
     {
-      "id": "36",
-      "image": " \"images/sneakers/081.png\"",
-      "name": "Nike Air Force 1 Low \"NAI-KE Forest Weave\"",
+      "id": "24",
+      "image": " \"images/sneakers/015.jpeg\"",
+      "name": "Nike Air Force 1 Low \"SMOKE GREY\"",
       "size": "39-45",
       "oldPrice": "€130.00",
-      "price": "€75.00 (4599 den.)"
+      "price": "€70.00 (4300 den.)"
     },
     {
-      "id": "37",
-      "image": " \"images/sneakers/089.jpeg\"",
-      "name": "KARL LAGERFELD \"CLASSIC WHITE\"",
-      "size": "36-45",
-      "oldPrice": "€90.00",
-      "price": "€45.00 (2700 den.)"
+      "id": "25",
+      "image": " \"images/sneakers/016.jpeg\"",
+      "name": "Nike Air Force 1 Low \"ROPE LACES\"",
+      "size": "39-45",
+      "oldPrice": "€130.00",
+      "price": "€70.00 (4300 den.)"
     },
     {
-      "id": "38",
-      "image": " \"images/sneakers/090.jpeg\"",
-      "name": "KARL LAGERFELD \"CLASSIC BLACK\"",
-      "size": "36-45",
-      "oldPrice": "€90.00",
-      "price": "€45.00 (2700 den.)"
+      "id": "26",
+      "image": " \"images/sneakers/017.jpeg\"",
+      "name": "Nike Air Max 95 \"ESSENTIAL BLACK\"",
+      "size": "39-45",
+      "oldPrice": "€130.00",
+      "price": "€65.00 (4000 den.)"
     },
     {
-      "id": "39",
-      "image": " \"images/sneakers/091.jpeg\"",
-      "name": "New Balance \"327\"",
-      "size": "36-45",
-      "oldPrice": "€70.00",
-      "price": "€35.00 (2100 den.)"
+      "id": "27",
+      "image": " \"images/sneakers/018.jpeg\"",
+      "name": "Nike Air Max 90 \"TERRASCAPE DREAM VENICE\"",
+      "size": "39-45",
+      "oldPrice": "€130.00",
+      "price": "€70.00 (4300 den.)"
+    },
+    {
+      "id": "28",
+      "image": " \"images/sneakers/019.jpeg\"",
+      "name": "Nike Air Max Plus TN \"JUST DO IT\"",
+      "size": "39-45",
+      "oldPrice": "€130.00",
+      "price": "€70.00 (4300 den.)"
     }
+    
   ]
 }
